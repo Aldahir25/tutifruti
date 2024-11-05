@@ -1,0 +1,146 @@
+/* Estilos del contenedor principal */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1f3b6b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+.search input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.icons a {
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga */
+}
+
+.hero-img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 400px; /* Ajusta la altura máxima según sea necesario */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsionarla */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+
+
+.hero-text .btn {
+    background-color: #ff9800;
+    padding: 8px 16px; /* Ajusta el padding del botón */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Productos section */
+.productos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.productos h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.productos-grid {
+    display: grid; /* Cambia de flex a grid para una mejor organización */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta el número de columnas automáticamente */
+    gap: 20px; /* Espaciado entre productos */
+}
+
+.producto-item {
+    text-align: center;
+}
+
+.producto-item img {
+    width: 100%; /* Cambia a 100% para que se ajuste al contenedor */
+    max-width: 150px; /* Mantén un límite de ancho para las imágenes */
+    height: auto; /* Mantiene la relación de aspecto */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor */
+}
+
+.producto-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Botón "Ver más" */
+.productos .btn {
+    display: inline-block; /* Asegura que el botón se centre */
+    margin-top: 20px; /* Espaciado superior */
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px; /* Ajusta el padding del botón */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #1f3b6b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
